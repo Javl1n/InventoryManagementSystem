@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ff2c11-6050-45ba-97d9-36c19c5070d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/categories.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/movements.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/suppliers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/login/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/login/loginform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/loginpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/loginpage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/registerpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registerpage.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

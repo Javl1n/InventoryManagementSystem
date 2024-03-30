@@ -1,8 +1,7 @@
 from customtkinter import *
 
 from auth.login.loginform import LoginForm
-from pages import registerpage
-from pages import home
+
 
 
 class LoginPage(CTkFrame):
@@ -14,9 +13,9 @@ class LoginPage(CTkFrame):
         self.frame = LoginForm(self, commands=self).place(relx=0.5, rely=0.5, anchor="center")
 
     def login(self):
-        self.navigation.show_frame(home.HomePage)
+        self.navigation.show_frame("ItemPage")
 
 
     def register(self):
-        self.navigation.show_frame(registerpage.RegisterPage)
+        self.navigation.show_frame("RegisterPage")
 

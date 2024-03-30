@@ -1,7 +1,6 @@
 from customtkinter import *
 
 from auth.register.registerform import RegisterForm
-from pages import loginpage
 
 
 class RegisterPage(CTkFrame):
@@ -16,4 +15,4 @@ class RegisterPage(CTkFrame):
         pass
 
     def login(self):
-        self.navigation.show_frame(loginpage.LoginPage)
+        self.navigation.show_frame("LoginPage")

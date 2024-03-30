@@ -1,7 +1,11 @@
 from customtkinter import *
 from pages.loginpage import LoginPage
 from pages.registerpage import RegisterPage
-from pages.home import HomePage
+from pages.items import ItemPage
+from pages.categories import CategoryPage
+from pages.movements import MovementPage
+from pages.suppliers import SupplierPage
+
 
 class App(CTk):
     def __init__(self):
@@ -18,13 +22,20 @@ class App(CTk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
-
-        for F in (HomePage, LoginPage, RegisterPage):
-            frame = F(master=container, controller = self)
-            self.frames[F] = frame
+        frames = {
+            'ItemPage': ItemPage,
+            'LoginPage': LoginPage,
+            'RegisterPage': RegisterPage,
+            'SupplierPage': SupplierPage,
+            'CategoryPage':CategoryPage,
+            'MovementPage':MovementPage
+        }
+        for key, value in frames.items():
+            frame = value(master=container, controller = self)
+            self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
-        self.show_frame(LoginPage)
+        self.show_frame("LoginPage")
 
     def show_frame(self, cont):
         frame = self.frames[cont]
