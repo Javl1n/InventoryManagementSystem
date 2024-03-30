@@ -3,9 +3,9 @@ from customtkinter import *
 class LoginForm(CTkFrame):
     def __init__(self, master, commands, **kwargs):
         super().__init__(master, **kwargs)
-        self.loginForm(self, commands)
+        self.render(self, commands)
 
-    def loginForm(self, master, commands):
+    def render(self, master, commands):
         loginTitle = CTkLabel(master = master, text="Log In", font=('default', 32, 'bold'))
         loginTitle.grid(padx=20, pady=20, row= 0, columnspan= 2)
 

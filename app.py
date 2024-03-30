@@ -1,7 +1,7 @@
 from customtkinter import *
 from pages.loginpage import LoginPage
 from pages.registerpage import RegisterPage
-from home import HomePage
+from pages.home import HomePage
 
 class App(CTk):
     def __init__(self):
@@ -25,7 +25,6 @@ class App(CTk):
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
         self.show_frame(LoginPage)
-        # self.login.place(relx = 0.5, rely = 0.5, anchor = CENTER)
 
     def show_frame(self, cont):
         frame = self.frames[cont]
