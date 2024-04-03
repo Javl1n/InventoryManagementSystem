@@ -1,6 +1,6 @@
 from customtkinter import *
 
-import navigation
+from components import navigation
 
 
 class MovementPage(CTkFrame):
@@ -11,6 +11,7 @@ class MovementPage(CTkFrame):
 
         self.navigation = controller
 
-        navigation.NavigationFrame(self, controller=controller).grid(row=0, column=0, rowspan=200, sticky="ns")
+        navigation.NavigationFrame(self, controller=controller).grid(row=0, column=0, rowspan=200, sticky="nsew")
 
-        title = CTkLabel(self, text="MOVEMENTS", font=("default", 32, "bold")).grid(row=0, column=1, padx=20, pady=20)
+        self.title = CTkLabel(self, text="MOVEMENTS", font=("default", 32, "bold"))
+        self.title.grid(row=0, column=1, padx=20, pady=20)

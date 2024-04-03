@@ -1,25 +1,44 @@
 from customtkinter import *
+from database import Database
 
 class RegisterForm(CTkFrame):
-    def __init__(self, master, commands, **kwargs):
+    def __init__(self, master, navigation, **kwargs):
         super().__init__(master, **kwargs)
-        self.registerForm(self, commands)
+        self.navigation = navigation
 
-    def registerForm(self, master, commands):
+
+        self.render(self)
+
+    def register(self):
+        db = Database()
+
+        username = self.username.get()
+        password = self.password.get()
+        contact = self.contacts.get()
+
+        db.query("INSERT INTO users (username, password, contact) VALUES (%s, %s, %s)", (username, password, contact))
+        db.commit()
+
+        self.navigation.show_frame('/login')
+
+    def render(self, master):
         registerTitle = CTkLabel(master = master, text="Register", font=('default', 32, 'bold'))
         registerTitle.grid(padx=20, pady=20, row= 0, columnspan= 2)
 
-        username = CTkEntry(master = master, placeholder_text="username", width=200)
-        username.grid(padx=20, pady=10, row= 1, columnspan= 2)
+        self.username = CTkEntry(master = master, placeholder_text="username", width=200)
+        self.username.grid(padx=20, pady=10, row= 1, columnspan= 2)
 
-        password = CTkEntry(master = master, placeholder_text="password", width=200)
-        password.grid(padx=20, pady=10, row= 2, columnspan= 2)
+        self.password = CTkEntry(master = master, placeholder_text="password", show="*", width=200)
+        self.password.grid(padx=20, pady=10, row= 2, columnspan= 2)
 
-        submit = CTkButton(master = master, text="LOGIN", width=200, command=commands.register).grid(pady=20, row= 3, columnspan= 2)
+        self.contacts = CTkEntry(master=master, placeholder_text="contact", width=200)
+        self.contacts.grid(padx=20, pady=10, row=3, columnspan=2)
+
+        submit = CTkButton(master = master, text="REGISTER", width=200, command=self.register).grid(pady=20, row= 4, columnspan= 2)
 
         registrationDescription = CTkLabel(master = master,
                                            text="Already have an account?",
-                                           fg_color='transparent').grid(pady=0, row= 4, column= 0)
+                                           fg_color='transparent').grid(pady=0, row= 5, column= 0)
         registrationButton = CTkButton(master = master,
                                        text="log in instead",
                                        fg_color='transparent',
@@ -27,4 +46,6 @@ class RegisterForm(CTkFrame):
                                        hover=False,
                                        height=0,
                                        width=0,
-                                       command=commands.login).grid(pady=5, row= 4, column= 1)
+                                       command=lambda: self.navigation.show_frame('/login')).grid(pady=5, row= 5, column= 1)
+
+

@@ -11,6 +11,7 @@ class App(CTk):
     def __init__(self):
         super().__init__()
         self.geometry("1280x720")
+        self.resizable(False, False)
         self.title("Inventory Management System")
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -23,21 +24,20 @@ class App(CTk):
 
         self.frames = {}
         frames = {
-            'ItemPage': ItemPage,
-            'LoginPage': LoginPage,
-            'RegisterPage': RegisterPage,
-            'SupplierPage': SupplierPage,
-            'CategoryPage':CategoryPage,
-            'MovementPage':MovementPage
+            '/items' : ItemPage,
+            '/login' : LoginPage,
+            '/register' : RegisterPage,
+            '/suppliers' : SupplierPage,
+            '/categories' : CategoryPage,
+            '/movements' : MovementPage
         }
         for key, value in frames.items():
             frame = value(master=container, controller = self)
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
-        self.show_frame("LoginPage")
+        self.show_frame("/items")
 
     def show_frame(self, cont):
         frame = self.frames[cont]
         frame.tkraise()
-

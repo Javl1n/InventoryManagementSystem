@@ -1,6 +1,6 @@
-from customtkinter import *
+from components.navigation import *
 
-from navigation import *
+from components import table
 
 
 class ItemPage(CTkFrame):
@@ -11,6 +11,26 @@ class ItemPage(CTkFrame):
 
         self.navigation = controller
 
-        NavigationFrame(self, controller=controller).grid(row=0, column=0, rowspan=200, sticky="ns")
+        NavigationFrame(self, controller=controller).place(x=0, y=0)
 
-        title = CTkLabel(self, text="ITEM MANAGEMENT", font=("default", 32, "bold")).grid(row=0, column=1, padx=20, pady=20)
+        title = CTkLabel(self, text="ITEM MANAGEMENT", font=("default", 32, "bold")).place(y=20, x=220)
+
+        self.columns = {
+            "ID" : {
+                'x' : 25
+            },
+            'Name' : {
+                'x' : 120
+            },
+            'Quantity' : {
+                'x': 420
+            },
+            'Category' : {
+                'x': 620
+            },
+            'Options' : {
+                'x': 920
+            },
+        }
+
+        self.table = table.Table(self, controller=self, columns = self.columns).place(y=70, x=220)
