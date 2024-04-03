@@ -1,17 +1,15 @@
-from components.navigation import *
+from customtkinter import *
+from components import navigation, table
 
-from components import table
 
 
 class ItemPage(CTkFrame):
     def __init__(self, master, controller, **kwargs):
         super().__init__(master, **kwargs)
-        # self.grid_rowconfigure(0, weight=1)
-        # self.grid_columnconfigure(0, weight=1)
 
         self.navigation = controller
 
-        NavigationFrame(self, controller=controller).place(x=0, y=0)
+        navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
 
         title = CTkLabel(self, text="ITEM MANAGEMENT", font=("default", 32, "bold")).place(y=20, x=220)
 
