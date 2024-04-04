@@ -1,11 +1,12 @@
 from customtkinter import *
 from database import Database
+import shelve
 
 class LoginForm(CTkFrame):
     def __init__(self, master, commands, **kwargs):
         super().__init__(master, **kwargs)
 
-        self.navigation = commands
+        self.controller = commands
 
         self.render(self)
 
@@ -23,7 +24,7 @@ class LoginForm(CTkFrame):
         user = db.getOne()
 
         if user:
-            self.navigation.show_frame('/items')
+            self.controller.navigate('/items')
 
         else:
             self.message.configure(text="incorrect credentials", text_color='red')
@@ -60,6 +61,6 @@ class LoginForm(CTkFrame):
             hover=False,
             height=0,
             width=0,
-            command=lambda: self.navigation.show_frame("/register")
+            command=lambda: self.controller.navigate("/register")
         )
         registrationButton.grid(pady=5, row= 5, column= 1)

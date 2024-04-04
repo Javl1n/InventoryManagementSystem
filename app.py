@@ -8,6 +8,7 @@ from pages.suppliers import SupplierPage
 
 
 class App(CTk):
+
     def __init__(self):
         super().__init__()
         self.geometry("1280x720")
@@ -23,6 +24,7 @@ class App(CTk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
+        self.session = ''
         frames = {
             '/items' : ItemPage,
             '/login' : LoginPage,
@@ -36,8 +38,14 @@ class App(CTk):
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
-        self.show_frame("/items")
+        self.navigate("/login")
 
-    def show_frame(self, cont):
-        frame = self.frames[cont]
+    def navigate(self, cont):
+        if not self.session:
+            frame = self.frames["/login"]
+        else:
+            frame = self.frames[cont]
         frame.tkraise()
+
+    # def setSession(self, user):
+    #     self.session = user

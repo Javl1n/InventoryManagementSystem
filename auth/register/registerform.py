@@ -4,7 +4,7 @@ from database import Database
 class RegisterForm(CTkFrame):
     def __init__(self, master, navigation, **kwargs):
         super().__init__(master, **kwargs)
-        self.navigation = navigation
+        self.controller = navigation
 
 
         self.render(self)
@@ -19,7 +19,7 @@ class RegisterForm(CTkFrame):
         db.query("INSERT INTO users (username, password, contact) VALUES (%s, %s, %s)", (username, password, contact))
         db.commit()
 
-        self.navigation.show_frame('/login')
+        self.controller.navigate('/login')
 
     def render(self, master):
         registerTitle = CTkLabel(master = master, text="Register", font=('default', 32, 'bold'))
@@ -46,6 +46,6 @@ class RegisterForm(CTkFrame):
                                        hover=False,
                                        height=0,
                                        width=0,
-                                       command=lambda: self.navigation.show_frame('/login')).grid(pady=5, row= 5, column= 1)
+                                       command=lambda: self.controller.navigate('/login')).grid(pady=5, row= 5, column= 1)
 
 
