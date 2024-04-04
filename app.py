@@ -41,10 +41,10 @@ class App(CTk):
         self.navigate("/login")
 
     def navigate(self, cont):
-        if not self.session:
-            frame = self.frames["/login"]
-        else:
-            frame = self.frames[cont]
+        # if not self.session:
+        #     frame = self.frames["/login"]
+        # else:
+        frame = self.frames[cont]
         frame.tkraise()
 
     # def setSession(self, user):

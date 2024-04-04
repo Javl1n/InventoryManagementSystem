@@ -39,13 +39,16 @@ class RegisterForm(CTkFrame):
         registrationDescription = CTkLabel(master = master,
                                            text="Already have an account?",
                                            fg_color='transparent').grid(pady=0, row= 5, column= 0)
-        registrationButton = CTkButton(master = master,
-                                       text="log in instead",
-                                       fg_color='transparent',
-                                       text_color='#87ceeb',
-                                       hover=False,
-                                       height=0,
-                                       width=0,
-                                       command=lambda: self.controller.navigate('/login')).grid(pady=5, row= 5, column= 1)
+
+        registrationButton = CTkButton(
+            master = master,
+            text="log in instead",
+            fg_color='transparent',
+            text_color='#87ceeb',
+            hover=False,
+            height=0,
+            width=0,
+            command=lambda: self.controller.navigate('/login')
+        ).grid(pady=5, row= 5, column= 1)
 
 

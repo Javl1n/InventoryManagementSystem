@@ -8,8 +8,7 @@ class NavigationFrame(CTkFrame):
         self.render()
 
     def logout(self):
-        self.controller.setSession("")
-        self.controller.navigate("/logout")
+        self.controller.navigate("/login")
 
     def render(self):
         CTkButton(self, text="Items", command= lambda: self.controller.navigate("/items")).place(y=40, relx=0.5, anchor='center')
