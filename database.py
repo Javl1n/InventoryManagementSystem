@@ -9,7 +9,7 @@ class Database():
             host = "localhost",
             port = "3307",
             user = "root",
-            password = "frankgwapo360",
+            password = "frank050204",
             database = "inventory_management_system"
         )
         self.cursor = self.connection.cursor()

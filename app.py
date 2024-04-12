@@ -1,7 +1,8 @@
 from customtkinter import *
 from pages.auth.loginpage import LoginPage
 from pages.auth.registerpage import RegisterPage
-from pages.items import ItemPage
+from pages.items.index import ItemsIndex
+from pages.items.create import ItemsCreate
 from pages.categories import CategoryPage
 from pages.movements import MovementPage
 from pages.suppliers import SupplierPage
@@ -26,7 +27,8 @@ class App(CTk):
         self.frames = {}
         self.session = ''
         frames = {
-            '/items' : ItemPage,
+            '/items' : ItemsIndex,
+            '/items/create' : ItemsCreate,
             '/login' : LoginPage,
             '/register' : RegisterPage,
             '/suppliers' : SupplierPage,
@@ -38,7 +40,7 @@ class App(CTk):
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
-        self.navigate("/login")
+        self.navigate("/items")
 
     def navigate(self, cont):
         # if not self.session:
