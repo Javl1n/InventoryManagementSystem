@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ff2c11-6050-45ba-97d9-36c19c5070d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/items/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/items/index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/categories/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/suppliers/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/suppliers/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/login/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/login/loginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/register/registerform.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/register/registerform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/items/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/suppliers.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/index.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +44,24 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/Python/InventoryManagementSystem/pages/items&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/Python/InventoryManagementSystem/components/suppliers&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Python\InventoryManagementSystem\components\suppliers" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\suppliers" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\components\categories" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\categories" />
       <recent name="C:\Development\Python\InventoryManagementSystem\pages\items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\items" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\auth" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\components" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\storage\sessions" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\app" />
       <recent name="C:\Development\Python\InventoryManagementSystem" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\auth\app" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\suppliers" />
     </key>
   </component>
   <component name="RunManager">

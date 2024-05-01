@@ -1,5 +1,5 @@
 from customtkinter import *
-from database import Database
+from app.database import Database
 
 class RegisterForm(CTkFrame):
     def __init__(self, master, navigation, **kwargs):

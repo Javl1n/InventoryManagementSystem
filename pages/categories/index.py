@@ -3,15 +3,17 @@ from customtkinter import *
 from components import navigation, table
 
 
-class CategoryPage(CTkFrame):
+class CategoryIndex(CTkFrame):
     def __init__(self, master, controller, **kwargs):
         super().__init__(master, **kwargs)
         # self.grid_rowconfigure(0, weight=1)
         # self.grid_columnconfigure(0, weight=1)
 
-        self.navigation = controller
+        self.controller = controller
 
         navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
+
+        add_item = CTkButton(self, text="Add Category", command=lambda: self.controller.navigate('/categories/create')).place(y=35, x=1190, anchor="center")
 
         title = CTkLabel(self, text="CATEGORIES", font=("default", 32, "bold")).place(y=20, x=220)
 

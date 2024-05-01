@@ -1,6 +1,7 @@
 from customtkinter import *
-from database import Database
-import shelve
+from app.database import Database
+from app.session import Session
+
 
 class LoginForm(CTkFrame):
     def __init__(self, master, commands, **kwargs):
@@ -11,6 +12,7 @@ class LoginForm(CTkFrame):
         self.render(self)
 
     def login(self):
+        self.message.configure(text="", text_color='red')
         db = Database()
 
         username = self.username.get()
@@ -21,9 +23,19 @@ class LoginForm(CTkFrame):
             (username, password)
         )
 
-        user = db.getOne()
+        userTuple = db.getOne()
 
-        if user:
+
+
+        if userTuple:
+            session = Session()
+            user = {
+                'id': userTuple[0],
+                'name': userTuple[1]
+            }
+            session.shelf['user'] = user
+            session.save()
+            session.close()
             self.controller.navigate('/items')
 
         else:

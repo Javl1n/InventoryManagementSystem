@@ -1,6 +1,6 @@
 from customtkinter import *
 from components import navigation, table
-
+from app.session import Session
 
 
 class ItemsIndex(CTkFrame):
@@ -10,6 +10,13 @@ class ItemsIndex(CTkFrame):
         self.controller = controller
 
         navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
+
+        session = Session()
+
+        self.user = session.shelf["user"]
+
+        session.close()
+
         title = CTkLabel(self, text="ITEM MANAGEMENT", font=("default", 32, "bold")).place(y=35, x=220, anchor="w")
 
         add_item = CTkButton(self, text="Add Item", command=lambda: self.controller.navigate('/items/create')).place(y=35, x=1190, anchor="center")
