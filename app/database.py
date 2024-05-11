@@ -14,8 +14,11 @@ class Database():
         )
         self.cursor = self.connection.cursor()
 
-    def query(self, query, values):
-        self.cursor.execute(query, values)
+    def query(self, query, values = None):
+        if values is not None:
+            self.cursor.execute(query, values)
+        else:
+            self.cursor.execute(query)
 
     def getOne(self):
         return self.cursor.fetchone()

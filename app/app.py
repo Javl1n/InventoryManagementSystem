@@ -44,7 +44,7 @@ class App(CTk):
             self.frames[key] = frame
             frame.grid(row = 0, column = 0, sticky = "nsew")
 
-        self.navigate("/login")
+        self.navigate("/categories")
 
     def navigate(self, cont):
         frame = self.frames[cont]

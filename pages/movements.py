@@ -30,4 +30,4 @@ class MovementPage(CTkFrame):
             },
         }
 
-        self.table = table.Table(self, controller=self, columns=self.columns).place(y=70, x=220)
+        # self.table = table.Table(self, controller=self, columns=self.columns).place(y=70, x=220)

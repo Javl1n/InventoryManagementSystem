@@ -1,6 +1,7 @@
 from customtkinter import *
 
 from components import navigation, table
+from app.database import Database
 
 
 class CategoryIndex(CTkFrame):
@@ -17,22 +18,32 @@ class CategoryIndex(CTkFrame):
 
         title = CTkLabel(self, text="CATEGORIES", font=("default", 32, "bold")).place(y=20, x=220)
 
-        self.columns = {
-            "ID": {
-                'x': 25
+        headers = {
+            0: {
+                'x': 25,
+                'text' : "ID",
             },
-            'Name': {
-                'x': 120
+            1: {
+                'x': 120,
+                'text' : 'Name'
             },
-            'Quantity': {
-                'x': 420
+            2: {
+                'x': 420,
+                'text' : 'Description'
             },
-            'Category': {
-                'x': 620
-            },
-            'Options': {
-                'x': 920
+            3: {
+                'x': 920,
+                'text' : 'Options'
             },
         }
 
-        self.table = table.Table(self, controller=self, columns=self.columns).place(y=70, x=220)
+
+        database = Database()
+
+        database.query("SELECT * FROM categories")
+
+        categories = database.get()
+
+        print(categories)
+
+        self.table = table.Table(self, controller=self, columns=headers, rows=categories).place(y=70, x=220)
