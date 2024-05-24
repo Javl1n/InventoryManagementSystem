@@ -1,6 +1,6 @@
 import shelve
 
-class Session():
+class LocalStorage():
     def __init__(self):
         self.shelf = shelve.open('storage/sessions/session')
 

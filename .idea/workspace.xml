@@ -5,14 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ff2c11-6050-45ba-97d9-36c19c5070d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/categories/edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/items/edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/movements/moveIn/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/movements/out/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/suppliers/edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/show.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/items/show.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/movements/moveIn/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/movements/moveIn/show.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/movements/out/create.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/movements/out/show.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/suppliers/show.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/categories/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/categories/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/localstorage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/login/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/login/loginform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/items/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/items/create.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/suppliers/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/suppliers/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/categories/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/items/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/movements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/movements/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/suppliers/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/create.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/suppliers/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.bak" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.dat" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.dat" afterDir="false" />
@@ -41,24 +58,24 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Development/Python/tkinterApp1",
+    "last_opened_file_path": "C:/Development/Python/InventoryManagementSystem/pages/movements/moveIn",
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements\moveIn" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements\out" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\components\movements\out" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements\in" />
       <recent name="C:\Development\Python\InventoryManagementSystem\components\suppliers" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\suppliers" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\components\categories" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\categories" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements\moveIn" />
+      <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements" />
       <recent name="C:\Development\Python\InventoryManagementSystem\storage\sessions" />
       <recent name="C:\Development\Python\InventoryManagementSystem\app" />
       <recent name="C:\Development\Python\InventoryManagementSystem" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\auth\app" />
-      <recent name="C:\Development\Python\InventoryManagementSystem\pages\suppliers" />
     </key>
   </component>
   <component name="RunManager">

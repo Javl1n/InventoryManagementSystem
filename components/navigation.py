@@ -1,20 +1,20 @@
 from customtkinter import *
-from app.session import Session
+from app.localstorage import LocalStorage
 
 
 class NavigationFrame(CTkFrame):
     def __init__(self, master, controller, **kwargs):
         super().__init__(master, height=720, **kwargs)
 
-        session = Session()
-        self.user = session.shelf['user']
+        session = LocalStorage()
+        self.user = session.shelf['user'] if session.shelf['user'] is not None else None
         session.close()
 
         self.controller = controller
         self.render()
 
     def logout(self):
-        session = Session()
+        session = LocalStorage()
         session.shelf['user'] = {
             'id': '',
             'name': ''

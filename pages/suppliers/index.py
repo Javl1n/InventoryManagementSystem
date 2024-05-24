@@ -1,9 +1,10 @@
 from customtkinter import *
 
 from components import navigation, table
+from app.database import Database
 
 
-class SupplierIndex(CTkFrame):
+class SuppliersIndex(CTkFrame):
     def __init__(self, master, controller, **kwargs):
         super().__init__(master, **kwargs)
         # self.grid_rowconfigure(0, weight=1)
@@ -17,23 +18,40 @@ class SupplierIndex(CTkFrame):
 
         add_item = CTkButton(self, text="Add Supplier", command=lambda: self.controller.navigate('/suppliers/create')).place(y=35, x=1190, anchor="center")
 
-
-        self.columns = {
-            "ID": {
-                'x': 25
+        headers = {
+            0: {
+                'x': 25,
+                'text': "ID",
             },
-            'Name': {
-                'x': 120
+            1: {
+                'x': 120,
+                'text': 'Name'
             },
-            'Quantity': {
-                'x': 420
+            2: {
+                'x': 320,
+                'text': 'Address'
             },
-            'Category': {
-                'x': 620
+            3: {
+                'x': 700,
+                'text': 'Contact'
             },
-            'Options': {
-                'x': 920
+            4: {
+                'x': 850,
+                'text': ''
             },
         }
 
-        # self.table = table.Table(self, controller=self, columns=self.columns).place(y=70, x=220)
+        database = Database()
+
+        database.query("SELECT * FROM suppliers")
+
+        categories = database.get()
+
+        button = {
+            'text': 'view more',
+        }
+
+        self.table = table.Table(self, controller=self, columns=headers, rows=categories, options=button).place(y=70, x=220)
+
+    def show(self, supplierId):
+        self.controller.navigate('/suppliers/show', {'supplier': supplierId})

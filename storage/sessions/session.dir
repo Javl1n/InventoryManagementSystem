@@ -1,1 +1,6 @@
 'user', (0, 38)
+'category', (512, 4)
+'item', (1024, 5)
+'supplier', (1536, 5)
+'moveOut', (2048, 5)
+'moveIn', (2560, 5)

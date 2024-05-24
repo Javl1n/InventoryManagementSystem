@@ -1,6 +1,6 @@
 from customtkinter import *
 from app.database import Database
-from app.session import Session
+from app.localstorage import LocalStorage
 
 
 class LoginForm(CTkFrame):
@@ -28,7 +28,7 @@ class LoginForm(CTkFrame):
 
 
         if userTuple:
-            session = Session()
+            session = LocalStorage()
             user = {
                 'id': userTuple[0],
                 'name': userTuple[1]

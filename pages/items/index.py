@@ -1,6 +1,7 @@
 from customtkinter import *
 from components import navigation, table
-from app.session import Session
+from app.localstorage import LocalStorage
+from app.database import Database
 
 
 class ItemsIndex(CTkFrame):
@@ -11,7 +12,7 @@ class ItemsIndex(CTkFrame):
 
         navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
 
-        session = Session()
+        session = LocalStorage()
 
         self.user = session.shelf["user"]
 
@@ -21,22 +22,39 @@ class ItemsIndex(CTkFrame):
 
         add_item = CTkButton(self, text="Add Item", command=lambda: self.controller.navigate('/items/create')).place(y=35, x=1190, anchor="center")
 
-        self.columns = {
-            "ID" : {
-                'x' : 25
+        headers = {
+            0: {
+                'x': 25,
+                'text': "ID",
             },
-            'Name' : {
-                'x' : 120
+            1: {
+                'x': 120,
+                'text': 'Name'
             },
-            'Quantity' : {
-                'x': 420
+            2: {
+                'x': 320,
+                'text': 'Description'
             },
-            'Category' : {
-                'x': 620
+            3: {
+                'x': 700,
+                'text': 'Quantity'
             },
-            'Options' : {
-                'x': 920
+            4: {
+                'x': 850,
+                'text': ''
             },
         }
 
-        # self.table = table.Table(self, controller=self, columns = self.columns).place(y=70, x=220)
+        database = Database()
+
+        database.query("SELECT * FROM items")
+
+        items = database.get()
+
+        button = {
+            'text': 'view more',
+        }
+        self.table = table.Table(self, controller=self, columns=headers, rows=items, options=button).place(y=70, x=220)
+
+    def show(self, itemId):
+        self.controller.navigate('/items/show', {'item': itemId})

@@ -32,8 +32,8 @@ class CategoryIndex(CTkFrame):
                 'text' : 'Description'
             },
             3: {
-                'x': 920,
-                'text' : 'Options'
+                'x': 850,
+                'text' : ''
             },
         }
 
@@ -44,6 +44,10 @@ class CategoryIndex(CTkFrame):
 
         categories = database.get()
 
-        print(categories)
+        button = {
+            'text': 'view more',
+        }
+        self.table = table.Table(self, controller=self, columns=headers, rows=categories, options=button).place(y=70, x=220)
 
-        self.table = table.Table(self, controller=self, columns=headers, rows=categories).place(y=70, x=220)
+    def show(self, categoryId):
+        self.controller.navigate('/categories/show', {'category': categoryId})
