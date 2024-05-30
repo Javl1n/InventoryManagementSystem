@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ff2c11-6050-45ba-97d9-36c19c5070d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/categories/edit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/items/edit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/movements/moveIn/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/movements/out/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/suppliers/edit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/categories/show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/items/show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/movements/moveIn/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/movements/moveIn/show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/movements/out/create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/movements/out/show.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/suppliers/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/InventoryManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InventoryManagementSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/localstorage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/login/loginform.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/login/loginform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/items/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/items/create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navigation.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/navigation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/suppliers/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/suppliers/create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/components/table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/categories/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/items/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/movements.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/movements/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/suppliers/create.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/suppliers/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/show.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.bak" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.dat" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.dir" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.dir" afterDir="false" />
@@ -52,16 +30,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Development/Python/InventoryManagementSystem/pages/movements/moveIn",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/Python/Waterbilling system&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Development\Python\InventoryManagementSystem\pages\movements\moveIn" />

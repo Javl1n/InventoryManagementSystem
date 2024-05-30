@@ -18,7 +18,7 @@ class Database():
         if values is not None:
             self.cursor.execute(query, values)
         else:
-            self.cursor.execute(query)
+            self.cursor.execute(query, )
 
     def getOne(self):
         return self.cursor.fetchone()
