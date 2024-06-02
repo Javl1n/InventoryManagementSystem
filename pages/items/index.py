@@ -10,13 +10,12 @@ class ItemsIndex(CTkFrame):
 
         self.controller = controller
 
+        storage = LocalStorage()
+        storage.shelf['item'] = None
+        storage.save()
+        storage.close()
+
         navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
-
-        session = LocalStorage()
-
-        self.user = session.shelf["user"]
-
-        session.close()
 
         title = CTkLabel(self, text="ITEM MANAGEMENT", font=("default", 32, "bold")).place(y=35, x=220, anchor="w")
 

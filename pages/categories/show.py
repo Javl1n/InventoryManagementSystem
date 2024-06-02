@@ -16,6 +16,7 @@ class CategoryShow(CTkFrame):
 
         storage = LocalStorage()
 
+
         if storage.shelf['category'] is None:
             return
 

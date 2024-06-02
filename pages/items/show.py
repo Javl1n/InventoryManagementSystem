@@ -16,10 +16,12 @@ class ItemsShow(CTkFrame):
 
         storage = LocalStorage()
 
+
         if storage.shelf['item'] is None:
             return
-
         item = storage.shelf['item']
+
+
 
         storage.save()
         storage.close()

@@ -7,9 +7,9 @@ class Database():
     def __init__(self):
         self.connection = connector.connect(
             host = "localhost",
-            port = "3307",
+            port = "3306",
             user = "root",
-            password = "frank050204",
+            password = "",
             database = "inventory_management_system"
         )
         self.cursor = self.connection.cursor()

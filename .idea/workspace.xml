@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36ff2c11-6050-45ba-97d9-36c19c5070d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/InventoryManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InventoryManagementSystem.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/categories/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/categories/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/items/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/items/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/items/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/suppliers/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/suppliers/index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.bak" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.dat" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/sessions/session.dir" beforeDir="false" afterPath="$PROJECT_DIR$/storage/sessions/session.dir" afterDir="false" />
@@ -32,11 +35,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.loginform.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/Python/Waterbilling system&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/Python/InventoryManagementSystem&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
@@ -56,7 +61,51 @@
       <recent name="C:\Development\Python\InventoryManagementSystem" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="loginform" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/auth/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/auth/login/loginform.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="InventoryManagementSystem" />
       <option name="ENV_FILES" value="" />
@@ -79,6 +128,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.loginform" />
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

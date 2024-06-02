@@ -2,6 +2,7 @@ from customtkinter import *
 
 from components import navigation, table
 from app.database import Database
+from app.localstorage import LocalStorage
 
 
 class SuppliersIndex(CTkFrame):
@@ -11,6 +12,11 @@ class SuppliersIndex(CTkFrame):
         # self.grid_columnconfigure(0, weight=1)
 
         self.controller = controller
+
+        storage = LocalStorage()
+        storage.shelf['item'] = None
+        storage.save()
+        storage.close()
 
         navigation.NavigationFrame(self, controller=controller).place(x=0, y=0)
 

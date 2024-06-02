@@ -2,6 +2,7 @@ from customtkinter import *
 
 from components import navigation, table
 from app.database import Database
+from app.localstorage import LocalStorage
 
 
 class CategoryIndex(CTkFrame):
@@ -9,6 +10,11 @@ class CategoryIndex(CTkFrame):
         super().__init__(master, **kwargs)
         # self.grid_rowconfigure(0, weight=1)
         # self.grid_columnconfigure(0, weight=1)
+        storage = LocalStorage()
+        storage.shelf['category'] = None
+        storage.save()
+        storage.close()
+
 
         self.controller = controller
 
